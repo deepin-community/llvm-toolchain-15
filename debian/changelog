@@ -1,3 +1,53 @@
+llvm-toolchain-15 (1:15.0.7-15) unstable; urgency=medium
+
+  * Add noble/oracular as supported release
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 04 May 2024 07:23:02 +0200
+
+llvm-toolchain-15 (1:15.0.7-14) unstable; urgency=medium
+
+  [ Matthias Klose ]
+  * Fix sanitizer build on 32bit time_t64 architectures.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 11 Mar 2024 22:38:22 +0100
+
+llvm-toolchain-15 (1:15.0.7-13) unstable; urgency=medium
+
+  [ Gianfranco Costamagna ]
+  * Drop compiler-rt hack
+  * Drop fix-unwind detection logic
+  * Disable tests on mips64el
+
+  [ Matthias Klose ]
+  * Make libclang-common-15-dev architecture dependent.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sun, 10 Mar 2024 01:51:56 +0100
+
+llvm-toolchain-15 (1:15.0.7-12) unstable; urgency=medium
+
+  * Disable compiler-rt on 32bit architectures except i386
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sun, 03 Mar 2024 12:29:18 +0100
+
+llvm-toolchain-15 (1:15.0.7-11.1) experimental; urgency=medium
+
+  * Non-maintainer upload.
+  * Rename libraries for 64-bit time_t transition.
+
+ -- Steve Langasek <vorlon@debian.org>  Mon, 26 Feb 2024 19:26:12 +0000
+
+llvm-toolchain-15 (1:15.0.7-11) unstable; urgency=medium
+
+  [ John Paul Adrian Glaubitz ]
+  * Don't run chrpath for libclang on sparc and sparc64
+  * Don't install *clang_rt* on sparc and sparc64
+  * Disable wasm support on sparc and sparc64
+
+  [ Matthias Klose ]
+  * Remove unused import of imp module in scan-view, removed in Python 3.12.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Fri, 23 Feb 2024 13:34:18 +0100
+
 llvm-toolchain-15 (1:15.0.7-10) unstable; urgency=medium
 
   [ Gianfranco Costamagna ]

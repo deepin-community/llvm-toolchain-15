@@ -138,7 +138,6 @@ compiler-rt/compilerrt-fix-warn-xray-testing.diff
 compiler-rt/compilerrt-builtins-arch-fix-armhf.diff
 compiler-rt/compilerrt-build-scudo-standalone-option.diff
 
-
 # wasm patches
 wasm/wasm-ld-path.diff
 wasm/wasm-compiler-rt-default.diff
@@ -170,3 +169,5 @@ CVE-2023-29933.patch
 CVE-2023-29934.patch
 CVE-2023-29939.patch
 gcc-13-build-fix.patch
+remove-unused-imp-module.diff
+libsanitizer-timebits.diff
